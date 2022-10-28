@@ -7,7 +7,7 @@ import css from './App.module.css';
 export const App = () => {
   const [savedQuery, setSavedQuery] = useState('');
   const [largeImageURL, setLargeImageURL] = useState('');
-  const [isOpenModal, setIsOpenModal] = useState(false);
+  // const [isOpenModal, setIsOpenModal] = useState(false);
 
   const handleSubmit = query => {
     setSavedQuery(query);

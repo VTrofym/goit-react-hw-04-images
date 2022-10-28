@@ -9,11 +9,13 @@ export class Modal extends Component {
   componentWillUnmount() {
     document.removeEventListener('keydown', this.keyClose);
   }
+
   keyClose = e => {
     if (e.key === 'Escape') {
       this.props.onClose();
     }
   };
+
   overlayClick = e => {
     if (e.target === e.currentTarget) {
       this.props.onClose();
